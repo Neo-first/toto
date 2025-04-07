@@ -1,0 +1,22 @@
+// BOUTON TERTIARY
+@use "../../abstracts/colors" as *;
+@use "../../abstracts/typography" as *;
+@use "../../abstracts/mixins" as *;
+//--------------------------------------//
+// BOUTON PAGE FORMULAIRE
+.cta-tertiary {
+    background-color: $SecondaryColor;
+    color: $ColorBTNTertiary;
+    font-size: 20px;
+    font-family: karlamedium;
+    padding: 0.5rem;
+    border-radius: 3%;
+
+    a{
+        text-transform: capitalize;
+        color: $ColorBTNTertiary;
+        
+    }
+}
+//--------------------------------------//
+

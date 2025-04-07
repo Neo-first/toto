@@ -1,0 +1,879 @@
+//--- HOME PAGE
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+@use "../abstracts/mixins" as *;
+//------------------------------------//
+//
+//--- Banner HomePage
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    
+    .video{
+        width: 100%;
+        height: 100%;
+    }
+    .title {
+        position: absolute;
+        top: 25%;
+        left: 33%;
+        color: $TertiaryColor;
+        font-family: $DisplayMedium;
+        font-size: 80px;
+        width: 105rem;
+    }
+
+    //MEDIA QUERIES MOBILE
+    @media (max-width: 720px) {
+        .video{
+            width: auto;
+            transform: translate(0px, -100px);
+            filter: brightness(80%);
+            z-index: -1;
+        }
+        .title {
+            font-size: 15px;
+            top: 40%;
+            left: 8%;
+        }
+    }
+}
+//-----------------------------------//
+//
+//--- FORMULAIRE
+.search-location {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8.438rem;
+
+    .formHome {
+        background-color: $TertiaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 48.625rem;
+        height: 14.125rem;
+        border-radius: 18px;
+
+        .title {
+            color: $primaryColor;
+            font-size: 30px;
+            font-family: $DisplayBold;
+            padding-left: 4rem;
+        }
+
+        .title p::first-letter {
+            text-transform: uppercase;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .choice-hostel {
+            display: flex;
+            flex-direction: column;
+        }
+        .choice-hostel label::first-letter {
+            text-transform: uppercase;
+        }
+
+        label{
+            font-size: 17px;
+            font-family: $KarlaRegular;
+            color: $ColorFormPageHome;
+            padding-bottom: 0.5rem;
+        }
+
+        .option-form {
+            color: $primaryColor;
+            font-family: $KarlaRegular;
+            font-size: 17px;
+        }
+
+        select{
+            width: 14rem;
+            height: 3.563rem;
+            background-color: $InputColor;
+            border: none;
+            outline: none;
+            font-family: $PoppinsRegular;
+            font-size: 17px;
+            color: $ColorFormInput;
+            border-radius: 5%;
+            padding-left: 1rem;
+        }
+
+        #choix {
+            text-transform: capitalize;
+        }
+
+        #number{
+            width: 14rem;
+            height: 3.563rem;
+        }
+
+        #date{
+            width: 14rem;
+            height: 3.563rem;
+        }
+
+        input {
+            color: $ColorFormInput;
+            background-color: $InputColor;
+            font-family: $PoppinsRegular;
+            font-size: 18px;
+            padding-left: 1rem;
+            border: none;
+            outline: none;
+        }
+
+        .number-individu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .number-individu label::first-letter {
+            text-transform: uppercase;
+        }
+
+        .date-reservation {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .date-reservation label::first-letter {
+            text-transform: uppercase;
+        }
+
+        .cta-secondary {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    //MEDIA QUERIES MOBILE
+    @media (max-width: 720px) {
+        .formHome {
+            display: flex;
+            align-items: center;
+            height: 27rem;
+            width: 400px;
+
+            .title{
+                padding-left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 22px;
+            }
+
+            .choice-hostel {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .number-individu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .date-reservation{
+                display: flex;
+                align-items: center;
+                padding-bottom: 1rem;
+            }
+
+            .row{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                width: 224px;
+                height: 223px;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .search-location{
+        padding-bottom: 4rem;
+    }
+}
+//-----------------------------------//
+//--- Section Hotel Feu
+
+.hotel-feu {
+    width: 100%;
+    padding-bottom: 6.875rem;
+    display: flex;
+    justify-content: center;
+
+    .container-hotel-feu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-hotel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        width: 31.25rem;
+        
+        h2 {
+            font-family: $DisplayMedium;
+            color: $primaryColor;
+            font-size: 6rem;
+            text-transform: capitalize;
+        }
+
+        .description {
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+        }
+
+        p::first-letter{
+            text-transform: uppercase;
+        }
+    }
+
+    .location {
+        gap: 1rem;
+
+        .countries {
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-family: $KarlaRegular;
+            display: flex;
+            padding-bottom: 1rem;
+        }
+
+        .testimonial {
+
+            p {
+                font-family: $KarlaRegular;
+                font-size: 0.9375rem;
+                color: $primaryColor;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+    .slideshow-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-left: 10rem;
+        width: 43.063rem;
+
+        img {
+            height: 38.8rem;
+            width: 30.5rem;
+        }
+    }
+}
+
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+    .hotel-feu{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+
+        .container-hotel-feu{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            height: 100%;
+
+            .container-hotel{
+                display: flex;
+                justify-content: space-around;
+                gap: 1rem;
+                height: 0%;
+            }
+            h2{
+                padding-bottom: 1.5rem;
+                font-size: 64px;
+            }
+            .location{
+                padding-bottom: 1.5rem;
+            }
+            .description{
+                padding-bottom: 2rem;
+            }
+
+            .slideshow-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding-left: 0;
+                width: 0;
+            }
+            img:last-child{
+                display: none;
+            }
+            .testimonial{
+                display: flex;
+            }
+        }
+    }
+}
+//-----------------------------------//
+//--- Section Hotel Air
+.hotel-air {
+    width: 100%;
+    padding-bottom: 6.875rem;
+
+    .container-hotel-air{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-left: 13rem;
+        width: 100%;
+    }
+
+    .slideshow-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-right: 8rem;
+
+        img {
+            height: 621px;
+            width: 488px;
+        }
+    }
+
+    .container-hotel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        height: 31.938rem;
+        width: 30.688rem;
+
+        h2 {
+            font-family: $DisplayMedium;
+            color: $primaryColor;
+            font-size: 6rem;
+            text-transform: capitalize;
+        }
+        .countries {
+            display: flex;
+            flex-direction: row;
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-family: $KarlaRegular;
+            gap: 0.5rem;
+            padding-bottom: 1rem;
+        }
+        .testimonial {
+            display: flex;
+            flex-direction: row;
+            font-family: $KarlaRegular;
+            font-size: 0.9375rem;
+            color: $primaryColor;
+            
+
+        }
+        .description {
+            display: flex;
+            flex-direction: row;
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+        }
+    }
+}
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    .hotel-air{
+
+        .container-hotel-air{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+
+            h2{
+                font-size: 64px;
+            }
+
+            .container-hotel{
+                height: 0%;
+                gap: 2rem;
+            }
+        }
+
+        .slideshow-container{
+            padding-right: 0;
+        }
+
+        img:last-child{
+            display: none;
+        }
+    }
+}
+//-----------------------------------//
+//--- Section Hotel Terre
+
+.hotel-terre {
+    width: 100%;
+    padding-bottom: 6.875rem;
+    display: flex;
+    justify-content: center;
+
+    .container-hotel-terre{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-hotel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        width: 31.25rem;
+        
+        h2 {
+            font-family: $DisplayMedium;
+            color: $primaryColor;
+            font-size: 6rem;
+            text-transform: capitalize;
+        }
+
+        .description {
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+        }
+
+        p::first-letter{
+            text-transform: uppercase;
+        }
+    }
+
+    .location {
+    
+        .countries {
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-family: $KarlaRegular;
+            padding-bottom: 1rem;
+        }
+
+        .testimonial {
+
+            p {
+                font-family: $KarlaRegular;
+                font-size: 0.9375rem;
+                color: $primaryColor;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+    .slideshow-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-left: 10rem;
+        width: 43.063rem;
+
+        img {
+            height: 38.8rem;
+            width: 30.5rem;
+        }
+
+    }
+}
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+    .hotel-terre{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+
+        .container-hotel-terre{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            height: 100%;
+
+            .container-hotel{
+                display: flex;
+                justify-content: space-around;
+                gap: 1rem;
+                height: 0%;
+            }
+            h2{
+                padding-bottom: 1.5rem;
+                font-size: 64px;
+            }
+            .location{
+                padding-bottom: 1.5rem;
+            }
+            .description{
+                padding-bottom: 2rem;
+            }
+
+            .slideshow-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding-left: 0;
+                width: 0;
+            }
+            img:last-child{
+                display: none;
+            }
+            .testimonial{
+                display: flex;
+            }
+        }
+    }
+}
+//-----------------------------------//
+//--- Section Hotel Eau
+.hotel-eau {
+    width: 100%;
+    padding-bottom: 6.875rem;
+
+    .container-hotel-eau{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-left: 13rem;
+        width: 100%;
+    }
+
+    .slideshow-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-right: 8rem;
+
+        img {
+            height: 621px;
+            width: 488px;
+        }
+    }
+
+    .container-hotel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        height: 31.938;
+        width: 30.688rem;
+
+        h2 {
+            font-family: $DisplayMedium;
+            color: $primaryColor;
+            font-size: 6rem;
+            text-transform: capitalize;
+        }
+        .countries {
+            display: flex;
+            flex-direction: row;
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-family: $KarlaRegular;
+            padding-bottom: 1rem;
+        }
+        .testimonial {
+            display: flex;
+            flex-direction: row;
+            font-family: $KarlaRegular;
+            font-size: 0.9375rem;
+            color: $primaryColor;
+            padding-left: 0.5rem;
+
+        }
+        .description {
+            display: flex;
+            flex-direction: row;
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+        }
+    }
+} 
+
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    .hotel-eau{
+        .container-hotel-eau{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+
+            h2{
+                font-size: 64px;
+            }
+        }
+
+        .slideshow-container{
+            padding-right: 0;
+        }
+        img:last-child{
+            display: none;
+        }
+        .testimonial{
+            padding-bottom: 1rem;
+        }
+
+        .description{
+            padding-bottom: 2rem;
+        }
+        .container-hotel{
+            height: 100%;
+            gap: 1rem;
+        }
+    }
+}
+//-----------------------------------//
+//--- Section Concept
+.concept {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 7rem;
+    gap: 7.875rem;
+  
+    img {
+      height: 20.875rem;
+      width: 30.5rem;
+    }
+  
+    //CONCEPT
+    .container-concept{
+        display: flex;
+        flex-direction: column;
+        width: 30.5rem;
+        justify-content: space-around;
+        
+        h3 {
+            font-family: $DisplayBold;
+            font-size: 3rem;
+            color: $primaryColor;
+          }
+      
+          h3::first-letter {
+            text-transform: uppercase;
+          }
+      
+          .description {
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+          }
+    }
+    //ARCHITECTURE
+    .container-architecture {
+      display: flex;
+      flex-direction: column;
+      height: 52.125rem;
+      width: 30.5rem;
+      justify-content: space-around;
+
+      h3 {
+        font-family: $DisplayBold;
+        font-size: 3rem;
+        color: $primaryColor;
+      }
+  
+      h3::first-letter {
+        text-transform: uppercase;
+      }
+  
+      .description {
+        font-family: $KarlaRegular;
+        font-size: 1.25rem;
+        color: $primaryColor;
+      }
+
+      .mobile-hidden-architecture{
+        display: none;
+      }
+    }  
+  }
+
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    .concept{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        padding-bottom: 3rem;
+
+
+        .container-concept{
+            padding-bottom: 2rem;
+            img{
+                padding-bottom: 1.5rem;
+            }
+            h3{
+                padding-bottom: 1rem;
+                font-size: 40px;
+            }
+        }
+        .container-architecture{
+            justify-content:center;
+            gap: 1.5rem;
+
+            h3{
+                font-size: 40px;
+            }
+
+            .desktop-hidden-architecture{
+                display: none;
+            }
+
+            .mobile-hidden-architecture{
+                display: block;
+            }
+        }
+    }   
+}
+//-----------------------------------//
+//--- Section Creator
+.creator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 7rem;
+    gap: 7.875rem;
+  
+    .container-description {
+      display: flex;
+      flex-direction: column;
+      width: 30.5rem;
+    
+      .title {
+        font-family: $DisplayBold;
+        font-size: 3rem;
+        color: $primaryColor;
+      }
+
+      p::first-letter {
+        text-transform: uppercase;
+      }
+  
+      h3::first-letter{
+        text-transform: uppercase;
+      }
+
+      img {
+        height: 5.5rem;
+        width: 7.3125rem;
+      }
+  
+      .description {
+        display: flex;
+        flex-direction: column;
+        font-family: $KarlaRegular;
+        font-size: 1.25rem;
+        color: $primaryColor;
+
+        p{
+            padding-top: 2rem;
+        }
+      }
+  
+      .fondateur {
+        display: flex;
+        flex-direction: column;
+        font-family: $KarlaBold;
+        font-size: 1.25rem;
+        color: $primaryColor;
+      }
+  
+      .fondateur p:last-child {
+        font-family: $KarlaRegular;
+        font-size: 1.25rem;
+        color: $SecondaryColor;
+      }
+
+      .mobile-creator{
+        display: none;
+      }
+    }
+
+    .container-photo {
+        width: 30.5rem;
+        height: 44.5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+  }
+//---------------------------------------------//
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    .creator{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            padding-bottom: 2rem;
+
+            img{
+                width: 30rem;
+                height: 20rem;
+            }
+            .mobile-creator{
+                display: block;
+              }
+        }
+
+        h3{
+            padding-bottom: 2rem;
+            font-size: 40px;
+        }
+
+        .description{
+            padding-bottom: 1rem;
+        }
+
+        .container-photo{
+            display: none;
+        }
+    }
+}
+//-----------------------------------//

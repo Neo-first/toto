@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Réservation - Les 4 éléments</title>
+		<link rel="icon" type="image/png" href="../assets/images/home-page/logo/logo.png">
+		<meta name="description" content="4 éléments, des hôtels inouïs partout dans le monde. Venez consulter nos offres de nos locations de vacances partout dans le monde.">
+		<link rel="stylesheet" href="../fonts/styles.css">
+		<link rel="stylesheet" href="../css/styles.css">
+	</head>
+	<body class="backgrd-image-form">
+		<!-- HEADER -->
+		<header class="color-header">
+			<nav class="navigation-mobile">
+				<div class="row">
+					<div class="burger-menu">
+						<a href="../index.html" title="Les 4 éléments. Des hôtels inouïs partout dans le monde">
+							<img src="../assets/images/mobile/header/burger.png" alt="Logo des 4 éléments">
+						</a>
+					</div>
+					<div class="link-social">
+						<a href="#" title="Suivez nos actualités sur Instagram">
+							<img src="../assets/images/mobile/header/instagram.png" alt="Instagram des 4 éléments">
+						</a>
+						<a href="#" title="Suivez nos actualités sur Facebook">
+							<img src="../assets/images/mobile/header/facebook.png" alt="Facebook des 4 éléments">
+						</a>
+					</div>
+				</div>
+			</nav>
+			<!-- NAVBAR DESKTOP -->
+			<nav class="navigation-desktop">
+				<ul>
+					<li>
+						<a href="../index.html" title="Les 4 éléments. Des hôtels inouïs partout dans le monde">
+							<img src="../assets/images/hotel-feu/logo/logo.png" alt="Logo des 4 éléments">
+						</a>
+					</li>
+					<li>
+						<a href="./hotel-feu.html" title="Pour se rendre sur la page Feu des 4 éléments">feu</a>
+					</li>
+					<li>
+						<a href="#" title="Pour se rendre sur la page Air des 4 éléments">air</a>
+					</li>
+					<li>
+						<a href="#" title="Pour se rendre sur la page Terre des 4 éléments">terre</a>
+					</li>
+					<li>
+						<a href="#" title="Pour se rendre sur la page Eau des 4 éléments">eau</a>
+					</li>
+				</ul>
+				<div class="contact-info">
+					<!-- CONTACT -->
+					<div class="contact">
+						<a href="#" title="Prenez contact avec nous">contact</a>
+						<a href="#" title="Suivez nos actualités sur Instagram">
+							<img src="../assets/images/hotel-feu/icons/instagram.svg" alt="Logo d'Instagram des 4 éléments">
+						</a>
+						<a href="#" title="Suivez nos actualités sur Facebook">
+							<img src="../assets/images/home-page/icons/facebook.svg" alt="Logo de Facebook des 4 éléments">
+						</a>
+					</div>
+					<!-- CONNEXION -->
+					<div class="connexion">
+						<!-- Bouton primary -->
+						<div class="button-primary">
+							<a href="./formulaire.html" title="Réserver votre logement sur les 4 éléments">reserver</a>
+						</div>
+						<a href="#" title="Connectez-vous à votre compte">se connecter</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- MAIN -->
+		<main>
+			<section class="formulaire">
+				<div class="container-formulaire">
+					<!-- BLOCK VISIBLE JS -->
+					<div id="formBlock" class="visible">
+						<div class="container-title">
+							<h1>formulaire de réservation</h1>
+						</div>
+						<form action="/connection.html" class="form-reservation">
+							<!-- NOM -->
+							<div class="lastname">
+								<label for="nom">votre nom de famille:</label>
+								<input type="text" id="nom" name="nom" placeholder="Saisissez votre nom de famille...">
+							</div>
+							<!-- PRENOM -->
+							<div class="firstname">
+								<label for="prenom">votre prénom:</label>
+								<input type="text" id="prenom" name="prenom" placeholder="Saisissez votre prénom...">
+							</div>
+							<!-- ADRESSE -->
+							<div class="number-street">
+								<label for="numberstreet">Numero de rue:</label>
+								<input type="text" id="numberstreet" name="numberstreet">
+							</div>
+							<div class="street">
+								<label for="street">votre adresse de votre domicile:</label>
+								<input type="text" id="street" name="street">
+							</div>
+							<div class="code-postal">
+								<label for="codepostal">votre code postal:</label>
+								<input type="text" id="codepostal" name="codepostal" placeholder="Saisissez votre code postal...">
+							</div>
+							<div class="residence">
+								<label for="ville">votre ville de résidence:</label>
+								<input type="text" id="ville" name="ville" placeholder="Saisissez votre ville...">
+							</div>
+							<!-- CONTACT -->
+							<div class="courriel">
+								<label for="email">votre adresse mail:</label>
+								<input type="text" id="email" name="email" placeholder="Saisissez votre adresse mail...">
+							</div>
+							<div class="number-phone">
+								<label for="phone">votre numéro de téléphone:</label>
+								<input type="text" name="text" id="phone" placeholder="Saisissez votre numéro de téléphone...">
+							</div>
+						</form>
+					</div>
+					<!-- BLOCK AFFICHAGE JS -->
+					<div class="form-JS"></div>
+					<!-- BUTTON FORMULAIRE -->
+					<div>
+						<button id="nextForm" class="cta-tertiary">Suivant</button>
+					</div>
+					<!-- JS RESULTAT FORM -->
+					<div id="result" class="style-resulat"></div>
+				</div>
+			</section>
+		</main>
+		<!-- FOOTER -->
+		<footer>
+			<!-- NAVIGATION FOOTER -->
+			<nav>
+				<div class="row">
+					<!-- CONTAINER SOCIAL -->
+					<div class="social-media">
+						<div class="logo">
+							<img src="../assets/images/mobile/footer/logo.png" alt="Logo des 4 éléments.">
+						</div>
+						<p>N’attendez plus pour vivre l’expérience 4 éléments le temps d’une nuit.</p>
+						<div class="social">
+							<a href="#" title="Suivez nos actualités sur Instagram">
+								<img src="../assets/images/mobile/footer/instagram.svg" alt="Instagram des 4 éléments">
+							</a>
+							<a href="#" title="Suivez nos actualités sur Facebook">
+								<img src="../assets/images/mobile/footer/facebook.svg" alt="Facebook des 4 éléments">
+							</a>
+						</div>
+					</div>
+					<!-- CONTAINER CONTACT -->
+					<div class="contact">
+						<h4>contact</h4>	
+						<p><span class="contact-color">adresse :</span> 8 avenue exemple</p>
+						<p><span class="contact-color">ouverture</span> : Tous les jours de 9h à 20h30</p>
+						<p><span class="contact-color">tél :</span> 33 08 280 28002</p>
+						<!-- Bouton primary -->
+						<div class="button-primary">
+							<a href="../pages/formulaire.html" title="Reserver votre logement sur les 4 éléments">reserver en ligne</a>
+						</div>
+					</div>
+					<!-- CONTAINER MENTIONS LEGALES -->
+					<div class="mentions-legales">
+						<ul>
+							<li>
+								<a href="#" title="Mentions légales du site les 4 éléments.">mentions légales</a>
+							</li>
+							<li>
+								<a href="#" title="Crédits du site des 4 éléments.">crédits</a>
+							</li>
+							<li>
+								<a href="#" class="cgv" title="Conditons générales des 4 éléments.">cgv</a>
+							</li>
+							<li>
+								<a href="#" title="Consulter la page de confidentialité pour en savoir plus.">confidentialité</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</footer>
+		<script src="../js/script.js"></script>
+	</body>
+</html>

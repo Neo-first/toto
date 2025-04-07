@@ -1,0 +1,1699 @@
+body {
+  background-color: #E5E0DC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+header .button-primary a {
+  background-color: #4F6234;
+  font-family: "karlaregular";
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+footer .button-primary a {
+  background-color: #4F6234;
+  font-family: "karlaregular";
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+
+.item .button-primary a {
+  background-color: #4F6234;
+  font-family: "karlaregular";
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+
+.button-secondary a {
+  background-color: #363A2B;
+  color: #FFFFFF;
+  font-size: 30px;
+  padding: 15px 29px;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.cta-tertiary {
+  background-color: #4F6234;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: karlamedium;
+  padding: 0.5rem;
+  border-radius: 3%;
+}
+.cta-tertiary a {
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+}
+footer nav .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+@media (max-width: 720px) {
+  footer nav .row {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    gap: 1rem;
+  }
+}
+footer nav .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "karlamedium";
+  font-size: 15px;
+  color: #363A2B;
+}
+footer nav .logo img {
+  width: 192px;
+}
+footer nav .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer nav h4 {
+  font-family: "playerbold";
+  font-size: 20px;
+  color: #363A2B;
+}
+footer nav h4::first-letter {
+  text-transform: uppercase;
+}
+footer nav .contact p::first-letter {
+  text-transform: uppercase;
+}
+footer nav .contact p:nth-child(4) {
+  padding-bottom: 1rem;
+}
+footer nav .contact p {
+  color: #363A2B;
+  font-size: 15px;
+  font-family: "karlaregular";
+}
+footer nav .contact-color {
+  color: #363A2B;
+  font-family: "karlabold";
+  font-size: 15px;
+}
+footer nav ul {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer nav li {
+  list-style: none;
+}
+footer nav a {
+  font-size: 15px;
+  font-family: "karlabold";
+  text-transform: capitalize;
+  color: #363A2B;
+}
+footer nav .cgv {
+  text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    gap: 1rem;
+  }
+  footer ul {
+    gap: 1rem;
+  }
+  footer .button-primary {
+    padding-bottom: 1rem;
+  }
+}
+.color-header {
+  background-color: #E5E0DC;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navigation-mobile {
+  display: none;
+}
+header nav {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 85rem;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 28.5rem;
+  gap: 2.2rem;
+}
+header nav li:first-letter {
+  text-transform: uppercase;
+}
+header nav a {
+  color: #363A2B;
+  text-decoration: none;
+  font-family: "karlamedium";
+  font-size: 1.25rem;
+}
+header nav a::first-letter {
+  text-transform: uppercase;
+}
+header nav img {
+  width: 9.9rem;
+}
+header .contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30.2rem;
+}
+header .contact-info .contact {
+  width: 9.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .contact-info .contact a {
+  color: #363A2B;
+  font-size: 1.25rem;
+  font-family: "karlamedium";
+}
+header .contact-info .contact img {
+  width: 1.375rem;
+}
+header .contact-info .connexion {
+  display: flex;
+  gap: 0.8125rem;
+}
+header .contact-info .connexion a:nth-child(2) {
+  color: #363A2B;
+  font-size: 1.25rem;
+  font-family: "karlamedium";
+}
+
+@media (max-width: 720px) {
+  header .navigation-desktop {
+    display: none;
+  }
+  header .navigation-mobile {
+    display: block;
+  }
+  header .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25rem;
+    height: 100%;
+    width: 100%;
+  }
+  header .burger-menu img {
+    width: 32px;
+    height: 32px;
+    color: black;
+  }
+  header .link-social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 1rem;
+  }
+  header .link-social img {
+    width: 25px;
+    height: 25px;
+  }
+  .color-header {
+    background-color: rgba(0, 0, 0, 0.6705882353);
+  }
+}
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+.hero-banner .video {
+  width: 100%;
+  height: 100%;
+}
+.hero-banner .title {
+  position: absolute;
+  top: 25%;
+  left: 33%;
+  color: #D9C7B3;
+  font-family: "playermedium";
+  font-size: 80px;
+  width: 105rem;
+}
+@media (max-width: 720px) {
+  .hero-banner .video {
+    width: auto;
+    transform: translate(0px, -100px);
+    filter: brightness(80%);
+    z-index: -1;
+  }
+  .hero-banner .title {
+    font-size: 15px;
+    top: 40%;
+    left: 8%;
+  }
+}
+
+.search-location {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8.438rem;
+}
+.search-location .formHome {
+  background-color: #D9C7B3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48.625rem;
+  height: 14.125rem;
+  border-radius: 18px;
+}
+.search-location .formHome .title {
+  color: #363A2B;
+  font-size: 30px;
+  font-family: "playerbold";
+  padding-left: 4rem;
+}
+.search-location .formHome .title p::first-letter {
+  text-transform: uppercase;
+}
+.search-location .formHome .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.search-location .formHome .choice-hostel {
+  display: flex;
+  flex-direction: column;
+}
+.search-location .formHome .choice-hostel label::first-letter {
+  text-transform: uppercase;
+}
+.search-location .formHome label {
+  font-size: 17px;
+  font-family: "karlaregular";
+  color: #000000;
+  padding-bottom: 0.5rem;
+}
+.search-location .formHome .option-form {
+  color: #363A2B;
+  font-family: "karlaregular";
+  font-size: 17px;
+}
+.search-location .formHome select {
+  width: 14rem;
+  height: 3.563rem;
+  background-color: #E1D2C2;
+  border: none;
+  outline: none;
+  font-family: "poppinsregular";
+  font-size: 17px;
+  color: #656366;
+  border-radius: 5%;
+  padding-left: 1rem;
+}
+.search-location .formHome #choix {
+  text-transform: capitalize;
+}
+.search-location .formHome #number {
+  width: 14rem;
+  height: 3.563rem;
+}
+.search-location .formHome #date {
+  width: 14rem;
+  height: 3.563rem;
+}
+.search-location .formHome input {
+  color: #656366;
+  background-color: #E1D2C2;
+  font-family: "poppinsregular";
+  font-size: 18px;
+  padding-left: 1rem;
+  border: none;
+  outline: none;
+}
+.search-location .formHome .number-individu {
+  display: flex;
+  flex-direction: column;
+}
+.search-location .formHome .number-individu label::first-letter {
+  text-transform: uppercase;
+}
+.search-location .formHome .date-reservation {
+  display: flex;
+  flex-direction: column;
+}
+.search-location .formHome .date-reservation label::first-letter {
+  text-transform: uppercase;
+}
+.search-location .formHome .cta-secondary {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 720px) {
+  .search-location .formHome {
+    display: flex;
+    align-items: center;
+    height: 27rem;
+    width: 400px;
+  }
+  .search-location .formHome .title {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+  }
+  .search-location .formHome .choice-hostel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-location .formHome .number-individu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-location .formHome .date-reservation {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .search-location .formHome .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 224px;
+    height: 223px;
+  }
+}
+
+@media (max-width: 720px) {
+  .search-location {
+    padding-bottom: 4rem;
+  }
+}
+.hotel-feu {
+  width: 100%;
+  padding-bottom: 6.875rem;
+  display: flex;
+  justify-content: center;
+}
+.hotel-feu .container-hotel-feu {
+  display: flex;
+  flex-direction: row;
+}
+.hotel-feu .container-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  width: 31.25rem;
+}
+.hotel-feu .container-hotel h2 {
+  font-family: "playermedium";
+  color: #363A2B;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hotel-feu .container-hotel .description {
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.hotel-feu .container-hotel p::first-letter {
+  text-transform: uppercase;
+}
+.hotel-feu .location {
+  gap: 1rem;
+}
+.hotel-feu .location .countries {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: "karlaregular";
+  display: flex;
+  padding-bottom: 1rem;
+}
+.hotel-feu .location .testimonial p {
+  font-family: "karlaregular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+  padding-left: 0.5rem;
+}
+.hotel-feu .slideshow-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 10rem;
+  width: 43.063rem;
+}
+.hotel-feu .slideshow-container img {
+  height: 38.8rem;
+  width: 30.5rem;
+}
+
+@media (max-width: 720px) {
+  .hotel-feu {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .hotel-feu .container-hotel-feu {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+  }
+  .hotel-feu .container-hotel-feu .container-hotel {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    height: 0%;
+  }
+  .hotel-feu .container-hotel-feu h2 {
+    padding-bottom: 1.5rem;
+    font-size: 64px;
+  }
+  .hotel-feu .container-hotel-feu .location {
+    padding-bottom: 1.5rem;
+  }
+  .hotel-feu .container-hotel-feu .description {
+    padding-bottom: 2rem;
+  }
+  .hotel-feu .container-hotel-feu .slideshow-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    width: 0;
+  }
+  .hotel-feu .container-hotel-feu img:last-child {
+    display: none;
+  }
+  .hotel-feu .container-hotel-feu .testimonial {
+    display: flex;
+  }
+}
+.hotel-air {
+  width: 100%;
+  padding-bottom: 6.875rem;
+}
+.hotel-air .container-hotel-air {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 13rem;
+  width: 100%;
+}
+.hotel-air .slideshow-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-right: 8rem;
+}
+.hotel-air .slideshow-container img {
+  height: 621px;
+  width: 488px;
+}
+.hotel-air .container-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  height: 31.938rem;
+  width: 30.688rem;
+}
+.hotel-air .container-hotel h2 {
+  font-family: "playermedium";
+  color: #363A2B;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hotel-air .container-hotel .countries {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: "karlaregular";
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+.hotel-air .container-hotel .testimonial {
+  display: flex;
+  flex-direction: row;
+  font-family: "karlaregular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+}
+.hotel-air .container-hotel .description {
+  display: flex;
+  flex-direction: row;
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+
+@media (max-width: 720px) {
+  .hotel-air .container-hotel-air {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  .hotel-air .container-hotel-air h2 {
+    font-size: 64px;
+  }
+  .hotel-air .container-hotel-air .container-hotel {
+    height: 0%;
+    gap: 2rem;
+  }
+  .hotel-air .slideshow-container {
+    padding-right: 0;
+  }
+  .hotel-air img:last-child {
+    display: none;
+  }
+}
+.hotel-terre {
+  width: 100%;
+  padding-bottom: 6.875rem;
+  display: flex;
+  justify-content: center;
+}
+.hotel-terre .container-hotel-terre {
+  display: flex;
+  flex-direction: row;
+}
+.hotel-terre .container-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  width: 31.25rem;
+}
+.hotel-terre .container-hotel h2 {
+  font-family: "playermedium";
+  color: #363A2B;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hotel-terre .container-hotel .description {
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.hotel-terre .container-hotel p::first-letter {
+  text-transform: uppercase;
+}
+.hotel-terre .location .countries {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: "karlaregular";
+  padding-bottom: 1rem;
+}
+.hotel-terre .location .testimonial p {
+  font-family: "karlaregular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+  padding-left: 0.5rem;
+}
+.hotel-terre .slideshow-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 10rem;
+  width: 43.063rem;
+}
+.hotel-terre .slideshow-container img {
+  height: 38.8rem;
+  width: 30.5rem;
+}
+
+@media (max-width: 720px) {
+  .hotel-terre {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .hotel-terre .container-hotel-terre {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+  }
+  .hotel-terre .container-hotel-terre .container-hotel {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    height: 0%;
+  }
+  .hotel-terre .container-hotel-terre h2 {
+    padding-bottom: 1.5rem;
+    font-size: 64px;
+  }
+  .hotel-terre .container-hotel-terre .location {
+    padding-bottom: 1.5rem;
+  }
+  .hotel-terre .container-hotel-terre .description {
+    padding-bottom: 2rem;
+  }
+  .hotel-terre .container-hotel-terre .slideshow-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    width: 0;
+  }
+  .hotel-terre .container-hotel-terre img:last-child {
+    display: none;
+  }
+  .hotel-terre .container-hotel-terre .testimonial {
+    display: flex;
+  }
+}
+.hotel-eau {
+  width: 100%;
+  padding-bottom: 6.875rem;
+}
+.hotel-eau .container-hotel-eau {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 13rem;
+  width: 100%;
+}
+.hotel-eau .slideshow-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-right: 8rem;
+}
+.hotel-eau .slideshow-container img {
+  height: 621px;
+  width: 488px;
+}
+.hotel-eau .container-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  height: 31.938;
+  width: 30.688rem;
+}
+.hotel-eau .container-hotel h2 {
+  font-family: "playermedium";
+  color: #363A2B;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hotel-eau .container-hotel .countries {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: "karlaregular";
+  padding-bottom: 1rem;
+}
+.hotel-eau .container-hotel .testimonial {
+  display: flex;
+  flex-direction: row;
+  font-family: "karlaregular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+  padding-left: 0.5rem;
+}
+.hotel-eau .container-hotel .description {
+  display: flex;
+  flex-direction: row;
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+
+@media (max-width: 720px) {
+  .hotel-eau .container-hotel-eau {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  .hotel-eau .container-hotel-eau h2 {
+    font-size: 64px;
+  }
+  .hotel-eau .slideshow-container {
+    padding-right: 0;
+  }
+  .hotel-eau img:last-child {
+    display: none;
+  }
+  .hotel-eau .testimonial {
+    padding-bottom: 1rem;
+  }
+  .hotel-eau .description {
+    padding-bottom: 2rem;
+  }
+  .hotel-eau .container-hotel {
+    height: 100%;
+    gap: 1rem;
+  }
+}
+.concept {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 7rem;
+  gap: 7.875rem;
+}
+.concept img {
+  height: 20.875rem;
+  width: 30.5rem;
+}
+.concept .container-concept {
+  display: flex;
+  flex-direction: column;
+  width: 30.5rem;
+  justify-content: space-around;
+}
+.concept .container-concept h3 {
+  font-family: "playerbold";
+  font-size: 3rem;
+  color: #363A2B;
+}
+.concept .container-concept h3::first-letter {
+  text-transform: uppercase;
+}
+.concept .container-concept .description {
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.concept .container-architecture {
+  display: flex;
+  flex-direction: column;
+  height: 52.125rem;
+  width: 30.5rem;
+  justify-content: space-around;
+}
+.concept .container-architecture h3 {
+  font-family: "playerbold";
+  font-size: 3rem;
+  color: #363A2B;
+}
+.concept .container-architecture h3::first-letter {
+  text-transform: uppercase;
+}
+.concept .container-architecture .description {
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.concept .container-architecture .mobile-hidden-architecture {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .concept {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    padding-bottom: 3rem;
+  }
+  .concept .container-concept {
+    padding-bottom: 2rem;
+  }
+  .concept .container-concept img {
+    padding-bottom: 1.5rem;
+  }
+  .concept .container-concept h3 {
+    padding-bottom: 1rem;
+    font-size: 40px;
+  }
+  .concept .container-architecture {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .concept .container-architecture h3 {
+    font-size: 40px;
+  }
+  .concept .container-architecture .desktop-hidden-architecture {
+    display: none;
+  }
+  .concept .container-architecture .mobile-hidden-architecture {
+    display: block;
+  }
+}
+.creator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 7rem;
+  gap: 7.875rem;
+}
+.creator .container-description {
+  display: flex;
+  flex-direction: column;
+  width: 30.5rem;
+}
+.creator .container-description .title {
+  font-family: "playerbold";
+  font-size: 3rem;
+  color: #363A2B;
+}
+.creator .container-description p::first-letter {
+  text-transform: uppercase;
+}
+.creator .container-description h3::first-letter {
+  text-transform: uppercase;
+}
+.creator .container-description img {
+  height: 5.5rem;
+  width: 7.3125rem;
+}
+.creator .container-description .description {
+  display: flex;
+  flex-direction: column;
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.creator .container-description .description p {
+  padding-top: 2rem;
+}
+.creator .container-description .fondateur {
+  display: flex;
+  flex-direction: column;
+  font-family: "karlabold";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.creator .container-description .fondateur p:last-child {
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #4F6234;
+}
+.creator .container-description .mobile-creator {
+  display: none;
+}
+.creator .container-photo {
+  width: 30.5rem;
+  height: 44.5rem;
+}
+.creator .container-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .creator {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .creator .title {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 2rem;
+  }
+  .creator .title img {
+    width: 30rem;
+    height: 20rem;
+  }
+  .creator .title .mobile-creator {
+    display: block;
+  }
+  .creator h3 {
+    padding-bottom: 2rem;
+    font-size: 40px;
+  }
+  .creator .description {
+    padding-bottom: 1rem;
+  }
+  .creator .container-photo {
+    display: none;
+  }
+}
+.hotel-feu-page {
+  padding-top: 70px;
+  width: 100%;
+  padding-bottom: 6.875rem;
+  display: flex;
+  justify-content: center;
+}
+.hotel-feu-page .container {
+  display: flex;
+  flex-direction: row;
+}
+.hotel-feu-page .container-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  width: 31.938rem;
+}
+.hotel-feu-page .container-hotel h1 {
+  font-family: "playermedium";
+  color: #363A2B;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hotel-feu-page .container-hotel .description {
+  font-family: "karlaregular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+.hotel-feu-page .container-hotel p::first-letter {
+  text-transform: uppercase;
+}
+.hotel-feu-page .location {
+  gap: 1rem;
+}
+.hotel-feu-page .location .countries {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-family: "karlaregular";
+  display: flex;
+  padding-bottom: 1rem;
+}
+.hotel-feu-page .location .testimonial {
+  display: flex;
+  flex-direction: row;
+}
+.hotel-feu-page .location .testimonial p {
+  font-family: "karlaregular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+  padding-left: 0.5rem;
+}
+.hotel-feu-page .slideshow-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 10rem;
+  width: 43.063rem;
+}
+.hotel-feu-page .slideshow-container img {
+  height: 38.8rem;
+  width: 30.5rem;
+}
+
+.offres {
+  padding-bottom: 133px;
+}
+.offres .container-offres {
+  display: flex;
+  justify-content: center;
+}
+.offres .offres-themes {
+  display: flex;
+  flex-direction: column;
+}
+.offres .title-offres {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 64px;
+}
+.offres .row {
+  display: flex;
+  flex-direction: row;
+  gap: 9rem;
+}
+.offres h2 {
+  font-size: 48px;
+  font-family: "playerbold";
+  color: #000000;
+}
+.offres h2::first-letter {
+  text-transform: uppercase;
+}
+.offres .column-igloo {
+  width: 492px;
+}
+.offres .column-igloo .column-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 10rem;
+  gap: 1rem;
+}
+.offres .column-igloo .column-option .options {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.offres .column-igloo .item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.offres .column-igloo .detail-igloo {
+  color: #363A2B;
+  font-size: 20px;
+  font-family: "karlaregular";
+  margin-top: 1rem;
+}
+.offres .column-igloo .detail-igloo::first-letter {
+  text-transform: uppercase;
+}
+.offres .column-igloo .detail {
+  color: #4F6234;
+  font-family: "karlaregular";
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+.offres .column-igloo .img-igloo {
+  padding-bottom: 81px;
+}
+.offres .column-igloo .img-igloo img {
+  width: 492px;
+  height: 432px;
+}
+.offres .column-igloo h3 {
+  color: #363A2B;
+  font-family: "playerbold";
+  font-size: 30px;
+}
+.offres .column-igloo h3::first-letter {
+  text-transform: uppercase;
+}
+.offres .column-igloo .reservation p {
+  color: #363A2B;
+  font-family: "karlamedium";
+  font-size: 24px;
+  padding-bottom: 35px;
+}
+.offres .column-igloo .tarif {
+  color: #363A2B;
+  font-family: "karlabold";
+  font-size: 24px;
+}
+.offres .column-lapony {
+  width: 492px;
+}
+.offres .column-lapony .column-option {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10rem;
+  gap: 1rem;
+}
+.offres .column-lapony .column-option .option {
+  display: flex;
+  gap: 1rem;
+}
+.offres .column-lapony .item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.offres .column-lapony .detail-lapony {
+  color: #363A2B;
+  font-size: 20px;
+  font-family: "karlaregular";
+  margin-top: 1rem;
+}
+.offres .column-lapony .detail-lapony::first-letter {
+  text-transform: uppercase;
+}
+.offres .column-lapony .detail {
+  color: #4F6234;
+  font-family: "karlaregular";
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+.offres .column-lapony .img-lapony {
+  padding-bottom: 81px;
+}
+.offres .column-lapony .img-lapony img {
+  width: 492px;
+  height: 432px;
+}
+.offres .column-lapony h3 {
+  color: #363A2B;
+  font-family: "playerbold";
+  font-size: 30px;
+}
+.offres .column-lapony h3::first-letter {
+  text-transform: uppercase;
+}
+.offres .column-lapony .reservation p {
+  color: #363A2B;
+  font-family: "karlamedium";
+  font-size: 24px;
+  padding-bottom: 35px;
+}
+.offres .column-lapony .tarif {
+  color: #363A2B;
+  font-family: "karlabold";
+  font-size: 24px;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-bottom: 110px;
+}
+.services .container {
+  display: flex;
+  flex-direction: column;
+}
+.services .container .title {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 1.2rem;
+}
+.services .container .title h3 {
+  color: #363A2B;
+  font-size: 30px;
+  font-family: "playerbold";
+}
+.services .container .title h3::first-letter {
+  text-transform: uppercase;
+}
+.services .container .title p {
+  font-size: 20px;
+  font-family: "karlaregular";
+  color: #000000;
+}
+.services .slider {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.services .slider .item {
+  position: relative;
+}
+.services .slider .item h3 {
+  font-family: "playerbold";
+  font-size: 30px;
+  color: #E5E0DC;
+}
+.services .slider .item h3::first-letter {
+  text-transform: uppercase;
+}
+.services .slider .item img {
+  height: 350px;
+  width: 488px;
+  filter: brightness(0.5);
+}
+.services .slider .item .info {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  padding: 1rem;
+  text-align: right;
+}
+.services .slider .item p {
+  color: #E5E0DC;
+  font-size: 20px;
+  font-family: "karlaregular";
+}
+.services .slider .item p::first-letter {
+  text-transform: uppercase;
+}
+.services .slider .item p:last-child {
+  padding-top: 0.5rem;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "karlabold";
+}
+
+.activity {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-bottom: 3rem;
+}
+.activity .container .title {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.2rem;
+}
+.activity .container .title h3 {
+  color: #363A2B;
+  font-size: 30px;
+  font-family: "playerbold";
+}
+.activity .container .title h3::first-letter {
+  text-transform: uppercase;
+}
+.activity .container .title p {
+  font-size: 20px;
+  font-family: "karlaregular";
+  color: #000000;
+}
+.activity .container .title p::first-letter {
+  text-transform: uppercase;
+}
+.activity .slider {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.activity .slider .item {
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+.activity .slider .item h3 {
+  font-family: "playerbold";
+  font-size: 30px;
+  color: #E5E0DC;
+  padding-bottom: 1rem;
+  padding-top: 5rem;
+}
+.activity .slider .item h3::first-letter {
+  text-transform: uppercase;
+}
+.activity .slider .item img {
+  height: 350px;
+  width: 488px;
+  filter: brightness(0.5);
+}
+.activity .slider .item .info {
+  position: absolute;
+  top: 0;
+  width: 342px;
+  height: 100%;
+  padding: 1rem;
+  text-align: right;
+}
+.activity .slider .item p {
+  color: #E5E0DC;
+  font-size: 20px;
+  font-family: "karlaregular";
+  padding-bottom: 3rem;
+}
+.activity .slider .item p::first-letter {
+  text-transform: uppercase;
+}
+
+.trailer {
+  position: relative;
+  width: 100%;
+  height: 940px;
+  overflow: hidden;
+}
+.trailer .video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.testimonial-clients {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.testimonial-clients .container-full {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-clients .container-item {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
+}
+.testimonial-clients .title {
+  font-size: 30px;
+  font-family: "karlabold";
+  color: #363A2B;
+  padding-bottom: 3rem;
+}
+.testimonial-clients .title h3::first-letter {
+  text-transform: uppercase;
+}
+.testimonial-clients .item-one {
+  width: 485px;
+  height: 257px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.testimonial-clients .item-one .user {
+  display: flex;
+  gap: 1.5rem;
+}
+.testimonial-clients .item-one .notes {
+  display: flex;
+}
+.testimonial-clients .item-one .notes p {
+  padding-left: 1rem;
+}
+.testimonial-clients .item-one .container p:nth-child(1) {
+  color: #363A2B;
+  font-size: 20px;
+  font-family: "karlabold";
+  padding-bottom: 0.5rem;
+}
+.testimonial-clients .item-one .description p {
+  color: #363A2B;
+  font-family: "karlaregular";
+  font-size: 20px;
+  padding-top: 1rem;
+}
+.testimonial-clients .item-one .description p::first-letter {
+  text-transform: uppercase;
+}
+.testimonial-clients .item-two {
+  width: 485px;
+  height: 257px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.testimonial-clients .item-two .user {
+  display: flex;
+  gap: 1.5rem;
+}
+.testimonial-clients .item-two .notes {
+  display: flex;
+}
+.testimonial-clients .item-two .notes p {
+  padding-left: 1rem;
+}
+.testimonial-clients .item-two .container p:nth-child(1) {
+  color: #363A2B;
+  font-size: 20px;
+  font-family: "karlabold";
+  padding-bottom: 0.5rem;
+}
+.testimonial-clients .item-two .description p {
+  color: #363A2B;
+  font-family: "karlaregular";
+  font-size: 20px;
+  padding-top: 1rem;
+}
+.testimonial-clients .item-two .description p::first-letter {
+  text-transform: uppercase;
+}
+
+.information {
+  height: 660px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+.information .container {
+  display: flex;
+  flex-direction: column;
+}
+.information h4 {
+  font-size: 48px;
+  font-family: "playerbold";
+  color: #363A2B;
+}
+.information h4::first-letter {
+  text-transform: uppercase;
+}
+.information .text-box p {
+  color: #363A2B;
+  font-size: 20px;
+}
+.information .text-box p:nth-child(1) {
+  font-family: "karlabold";
+}
+.information .text-box p:nth-child(1)::first-letter {
+  text-transform: uppercase;
+}
+.information .text-box p:nth-child(2) {
+  font-family: "karlaregular";
+}
+.information .text-box p:nth-child(3) {
+  font-family: "karlaregular";
+}
+.information .accessibilite {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.information .accessibilite .column {
+  display: flex;
+  flex-direction: column;
+}
+.information .accessibilite .column:first-child {
+  width: 485px;
+  height: 319px;
+  display: flex;
+  justify-content: space-between;
+}
+.information .accessibilite .column:last-child {
+  width: 485px;
+  height: 319px;
+  display: flex;
+  justify-content: space-between;
+}
+.information .accessibilite .text-box:nth-child(3) {
+  padding-left: 2rem;
+}
+.information .accessibilite .text-box {
+  padding-left: 1rem;
+}
+.information .row {
+  display: flex;
+  flex-direction: row;
+}
+.information .row .column {
+  display: flex;
+  flex-direction: column;
+}
+.information .contact h4 {
+  color: #363A2B;
+  font-size: 30px;
+  font-family: "playerbold";
+}
+.information .contact p {
+  color: #000000;
+  font-family: "karlaregular";
+  font-size: 20px;
+}
+.information .contact p::first-letter {
+  text-transform: uppercase;
+}
+
+.backgrd-image-form {
+  background-image: url("./img-background/chemin-foret.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.formulaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.formulaire .container-formulaire {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7803921569);
+  border-radius: 3%;
+}
+.formulaire .container-formulaire .container-title {
+  display: flex;
+  justify-content: center;
+}
+.formulaire .container-formulaire h1::first-letter {
+  text-transform: uppercase;
+}
+.formulaire .container-formulaire h1 {
+  font-family: "karlabold";
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8470588235);
+  padding-top: 5rem;
+}
+.formulaire .container-formulaire .visible {
+  display: block;
+}
+.formulaire .container-formulaire .form-JS {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 3rem;
+}
+.formulaire .container-formulaire .form-JS h2 {
+  color: rgba(255, 255, 255, 0.8470588235);
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.formulaire .container-formulaire .form-JS h2::first-letter {
+  text-transform: uppercase;
+}
+.formulaire .container-formulaire .form-JS h3 {
+  color: rgba(255, 255, 255, 0.8470588235);
+  font-size: 27px;
+}
+.formulaire .container-formulaire .form-JS .row-form:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.formulaire .container-formulaire .form-JS .row-form:nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
+.formulaire .container-formulaire .form-JS .departure-choix {
+  padding-bottom: 0.5rem;
+}
+.formulaire .container-formulaire .form-JS .departure-choix label {
+  padding-right: 1.2rem;
+}
+.formulaire .container-formulaire .form-JS .row-form:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.formulaire .container-formulaire .form-JS .row-form:nth-child(5) {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.formulaire .container-formulaire .form-JS .row-form:nth-child(6) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formulaire .container-formulaire .form-JS .optionrepas {
+  display: flex;
+  flex-direction: column;
+}
+.formulaire .container-formulaire .form-JS label {
+  padding-bottom: 0.5rem;
+}
+.formulaire .container-formulaire .style-resulat {
+  padding: 2rem;
+  color: #FFFFFF;
+}
+.formulaire .container-formulaire .form-reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 5rem;
+}
+.formulaire .container-formulaire label {
+  font-size: 20px;
+  font-family: "karlaregular";
+  color: rgba(255, 255, 255, 0.8470588235);
+}
+.formulaire .container-formulaire .lastname {
+  padding-right: 2rem;
+}
+.formulaire .container-formulaire .lastname::first-letter {
+  text-transform: uppercase;
+}
+.formulaire .container-formulaire .code-postal {
+  padding-right: 2rem;
+}
+.formulaire .container-formulaire .code-postal::first-letter {
+  text-transform: uppercase;
+}
+.formulaire .container-formulaire .courriel {
+  padding-right: 2rem;
+}
+.formulaire .container-formulaire .courriel::first-letter {
+  text-transform: uppercase;
+}
+.formulaire .container-formulaire .firstname::first-letter {
+  text-transform: uppercase;
+}
+.formulaire .container-formulaire .residence::first-letter {
+  text-transform: uppercase;
+}
+.formulaire .container-formulaire .number-phone::first-letter {
+  text-transform: uppercase;
+}
+@media (max-width: 720px) {
+  .formulaire .container-formulaire .form-reservation {
+    padding: 2.5rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

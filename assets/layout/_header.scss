@@ -1,0 +1,136 @@
+// HEADER
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+@use "../abstracts/mixins" as *;
+//------------------------------------//
+//
+.color-header{
+    background-color: $BackgroundColorPage;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .navigation-mobile{
+        display: none;
+    }
+
+    nav {
+        height: 4.5rem;
+        display: flex;
+        justify-content: space-between;
+        width: 85rem;
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            width: 28.5rem;
+            gap: 2.2rem;
+        }
+
+        li:first-letter {
+            text-transform: uppercase;
+        }
+
+        a {
+            color: $primaryColor;
+            text-decoration: none;
+            font-family: $KarlaMedium;
+            font-size: 1.25rem; 
+        }
+
+        a::first-letter {
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 9.9rem;
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30.2rem;
+
+        .contact {
+            width: 9.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                color: $primaryColor;
+                font-size: 1.25rem;
+                font-family: $KarlaMedium;
+            }
+
+            img {
+                width: 1.375rem;
+            }
+        }
+        .connexion {
+            display: flex;
+            gap: 0.8125rem;
+
+            a:nth-child(2) {
+                color: $primaryColor;
+                font-size: 1.25rem;
+                font-family: $KarlaMedium;
+            }
+        }
+    }
+}
+
+//MEDIA QUERIES MOBILE
+@media (max-width: 720px) {
+
+    header{
+        
+        .navigation-desktop{
+            display: none;
+        }
+        .navigation-mobile{
+            display: block;
+        }
+
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25rem;
+            height: 100%;
+            width: 100%;
+        }
+
+        .burger-menu{
+
+            img{
+                width: 32px;
+                height: 32px;
+                color: black;
+            }
+        }
+
+        .link-social{
+
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding-right: 1rem;
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    .color-header{
+        background-color: $ColorHeaderPageForm;
+    }
+}
+//------------------------------------------------------//

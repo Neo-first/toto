@@ -1,0 +1,52 @@
+// BOUTON PRIMARY
+@use "../../abstracts/colors" as *;
+@use "../../abstracts/typography" as *;
+@use "../../abstracts/mixins" as *;
+//--------------------------------------//
+//--- BOUTON PRIMAIRE
+//HEADER EN CAPITAL
+header{
+    .button-primary {
+
+        a {
+            background-color: $SecondaryColor;
+            font-family: $KarlaRegular;
+            color: $ColorBTNPrimary;
+            font-size: 20px;
+            padding: 12px 16px;
+            border-radius: 6px;
+            text-transform: capitalize;
+        }
+    }
+}
+//--------------------------------------//
+// FOOTER
+footer{
+    .button-primary {
+
+        a {
+            background-color: $SecondaryColor;
+            font-family: $KarlaRegular;
+            color: $ColorBTNPrimary;
+            font-size: 20px;
+            padding: 12px 16px;
+            border-radius: 6px;            
+        }
+    }
+}
+//--------------------------------------//
+//BOUTON ITEM ACTIVITY
+.item {
+    .button-primary {
+
+        a {
+            background-color: $SecondaryColor;
+            font-family: $KarlaRegular;
+            color: $ColorBTNPrimary;
+            font-size: 20px;
+            padding: 12px 16px;
+            border-radius: 6px;            
+        }
+    }
+}
+//--------------------------------------//

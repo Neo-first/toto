@@ -1,0 +1,8 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+//------------------------------------//
+// COULEUR BACKGROUND SUR SITE WEB 4 ELEMENTS
+body {
+    background-color: $BackgroundColorPage;
+}
+//------------------------------------//

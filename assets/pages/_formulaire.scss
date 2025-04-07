@@ -1,0 +1,186 @@
+//--- FORMULAIRE
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+@use "../abstracts/mixins" as *;
+//------------------------------------//
+//
+//Background Image Page Formulaire
+.backgrd-image-form {
+    background-image: url("./img-background/chemin-foret.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .container-formulaire {
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $BackgroundFormPageBlock;
+        border-radius: 3%;
+    
+        .container-title{
+            display: flex;
+            justify-content: center;
+        }
+
+        h1::first-letter{
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-family: $KarlaBold;
+            font-size: 30px;
+            color: $ColorFormPageBlock;
+            padding-top: 5rem;
+        }
+        //
+        //---------------------//
+        //-------- JS ---------//   
+        //
+        //Permet d'afficher et de cacher le 1er block HTML 
+        .visible{
+            display: block;
+        }
+        //---- CSS JS ----//
+        .form-JS{
+            width: 100%;
+            height: 100%;
+            padding: 2rem 3rem;
+
+            h2{
+                color: $ColorFormPageBlock;
+                font-size: 30px;
+                text-align: center;
+                padding-bottom: 3rem;
+            }
+
+            h2::first-letter{
+                text-transform: uppercase;
+            }
+
+            h3{
+                color: $ColorFormPageBlock;
+                font-size: 27px;
+            }
+
+            .row-form:nth-child(2){
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .row-form:nth-child(3){
+                display: flex;
+                justify-content: center;
+            }
+            .departure-choix{
+                padding-bottom: 0.5rem;
+                label{
+                    padding-right: 1.2rem;
+                }
+            }
+            .row-form:nth-child(4){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 2rem;
+            }
+            .row-form:nth-child(5){
+                padding-top: 1rem;
+                padding-right: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .row-form:nth-child(6){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .optionrepas{
+                display: flex;
+                flex-direction: column;
+            }
+            label{
+                padding-bottom: 0.5rem;
+            }
+        }
+        //--------------------------------//
+        //Block Fin resultat
+        .style-resulat{
+            padding: 2rem;
+            color: $ColortxtForm;
+        }
+        //-------------------------------//
+        //
+        .form-reservation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 5rem;
+        }
+
+        label {
+            font-size: 20px;
+            font-family: $KarlaRegular;
+            color: $ColorFormPageBlock;
+        }
+
+        .lastname {
+            padding-right: 2rem;
+        }
+
+        .lastname::first-letter {
+            text-transform: uppercase;
+        }
+
+        .code-postal {
+            padding-right: 2rem;
+        }
+
+        .code-postal::first-letter {
+            text-transform: uppercase;
+        }
+
+        .courriel {
+            padding-right: 2rem;
+        }
+
+        .courriel::first-letter {
+            text-transform: uppercase;
+        }
+
+        .firstname::first-letter {
+            text-transform: uppercase;
+        }
+
+        .residence::first-letter {
+            text-transform: uppercase;
+        }
+        .number-phone::first-letter {
+            text-transform: uppercase;
+        }
+    
+        //MEDIA QUERIES MOBILE
+        @media (max-width: 720px) { 
+            .form-reservation{
+                padding: 2.5rem;
+            }
+        }
+    }   
+}

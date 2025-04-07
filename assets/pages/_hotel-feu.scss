@@ -1,0 +1,686 @@
+//--- PAGE HOTEL FEU
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+@use "../abstracts/mixins" as *;
+//------------------------------------//
+//--- SECTION FEU
+.hotel-feu-page {
+    padding-top: 70px;
+    width: 100%;
+    padding-bottom: 6.875rem;
+    display: flex;
+    justify-content: center;
+
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-hotel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        width: 31.938rem;
+  
+        h1 {
+            font-family: $DisplayMedium;
+            color: $primaryColor;
+            font-size: 6rem;
+            text-transform: capitalize;
+        }
+
+        .description {
+            font-family: $KarlaRegular;
+            font-size: 1.25rem;
+            color: $primaryColor;
+        }
+
+        p::first-letter{
+            text-transform: uppercase;
+        }
+    }
+
+    .location {
+        gap: 1rem;
+
+        .countries {
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-family: $KarlaRegular;
+            display: flex;
+            padding-bottom: 1rem;
+        }
+
+        .testimonial {
+            display: flex;
+            flex-direction: row;
+            p {
+                font-family: $KarlaRegular;
+                font-size: 0.9375rem;
+                color: $primaryColor;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+    .slideshow-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-left: 10rem;
+        width: 43.063rem;
+
+        img {
+            height: 38.8rem;
+            width: 30.5rem;
+        }
+    }
+}
+//------------------------------------//
+//--- SECTION OFFRES
+
+.offres {
+    padding-bottom: 133px;
+
+    .container-offres {
+        display: flex;
+        justify-content: center;
+    }
+
+    .offres-themes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-offres {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 64px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        gap: 9rem;
+    }
+
+    h2 {
+        font-size: 48px;
+        font-family: $DisplayBold;
+        color: $ColorH2OffresFeu;
+    }
+
+    h2::first-letter{
+        text-transform: uppercase;
+    }
+    //------ COLUMN 1 ------//
+    .column-igloo {
+        width: 492px;
+
+        .column-option {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-right: 10rem;
+            gap: 1rem;
+            
+    
+            .options {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+            }
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+        }
+    
+        .detail-igloo {
+            color: $primaryColor;
+            font-size: 20px;
+            font-family: $KarlaRegular;
+            margin-top: 1rem;
+        }
+    
+        .detail-igloo::first-letter {
+            text-transform: uppercase;
+        }
+    
+        .detail {
+            color: $SecondaryColor;
+            font-family: $KarlaRegular;
+            font-size: 15px;
+            padding-bottom: 1rem;
+        }
+        
+        .img-igloo {
+            padding-bottom: 81px;
+            img {
+                width: 492px;
+                height: 432px;
+            }
+        }
+
+        h3 {
+            color: $primaryColor;
+            font-family: $DisplayBold;
+            font-size: 30px;
+        }
+    
+        h3::first-letter {
+            text-transform: uppercase;
+        }
+    
+        .reservation {
+            p {
+                color: $primaryColor;
+                font-family: $KarlaMedium;
+                font-size: 24px;
+                padding-bottom: 35px;
+            }
+        }
+    
+        .tarif {
+            color: $primaryColor;
+            font-family: $KarlaBold;
+            font-size: 24px;
+        }
+    }
+
+    //------ COLUMN 2 ------//
+    .column-lapony {
+        width: 492px;
+
+        .column-option {
+            display: flex;
+            flex-direction: column;
+            padding-right: 10rem;
+            gap: 1rem;
+    
+            .option {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+        }
+    
+        .detail-lapony {
+            color: $primaryColor;
+            font-size: 20px;
+            font-family: $KarlaRegular;
+            margin-top: 1rem;
+        }
+    
+        .detail-lapony::first-letter {
+            text-transform: uppercase;
+        }
+    
+        .detail {
+            color: $SecondaryColor;
+            font-family: $KarlaRegular;
+            font-size: 15px;
+            padding-bottom: 1rem;
+        }
+  
+        .img-lapony {
+            padding-bottom: 81px;
+
+            img {
+                width: 492px;
+                height: 432px;
+            }
+        }
+    
+        h3 {
+            color: $primaryColor;
+            font-family: $DisplayBold;
+            font-size: 30px;
+        }
+    
+        h3::first-letter {
+            text-transform: uppercase;
+        }
+    
+        .reservation {
+
+            p {
+                color: $primaryColor;
+                font-family: $KarlaMedium;
+                font-size: 24px;
+                padding-bottom: 35px;
+            }
+        }
+    
+        .tarif {
+            color: $primaryColor;
+            font-family: $KarlaBold;
+            font-size: 24px;
+        }
+    }
+}
+//--------------- SERVICES -------------------//
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-bottom: 110px;
+ 
+    .container{
+        display: flex;
+        flex-direction: column;
+    
+        .title {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding-bottom: 1.2rem;
+
+            h3{
+                color: $primaryColor;
+                font-size: 30px;
+                font-family: $DisplayBold;
+            }
+
+            h3::first-letter{
+                text-transform: uppercase;
+            }
+            
+            p{
+                font-size: 20px;
+                font-family: $KarlaRegular;
+                color: $ColorDetailOffreFeu;
+            }
+        }
+
+    }
+    //--- SLIDER CAROUSEL JS ---//
+    .slider {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+
+        .item {
+            position: relative;
+
+            h3 {
+                font-family: $DisplayBold;
+                font-size: 30px;
+                color: $ColorCardsSlider;
+            }
+
+            h3::first-letter{
+                text-transform: uppercase;
+            }
+        
+            img {
+                height: 350px;
+                width: 488px;
+                // Assombrir images
+                filter: brightness(0.5);
+            }
+
+            .info {
+                position: absolute;
+                bottom: 5%;
+                left: 0;
+                padding: 1rem;
+                text-align: right;
+            }
+
+            p {
+                color: $ColorCardsSlider;
+                font-size: 20px;
+                font-family: $KarlaRegular;
+            }
+
+            p::first-letter {
+                text-transform: uppercase;
+            }
+
+            p:last-child{
+                padding-top: 0.5rem;
+                color: $ColorCardsSliderDescript;
+                font-size: 20px;
+                font-family: $KarlaBold;
+
+            }
+        }
+    }
+}
+//-----------------------------------//
+//---- Activity
+
+.activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-bottom: 3rem;
+
+    .container {
+
+        .title {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 1.2rem;
+            
+            h3{
+                color: $primaryColor;
+                font-size: 30px;
+                font-family: $DisplayBold;
+            }
+
+            h3::first-letter{
+                text-transform: uppercase;
+            }
+
+            p{
+                font-size: 20px;
+                font-family: $KarlaRegular;
+                color: $ColorDetailOffreFeu ;
+            }
+
+            p::first-letter{
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    //--- SLIDER CAROUSEL JS ---//
+    .slider {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+
+        .item {
+            position: relative;
+            display: flex;
+            justify-content: right;
+
+            h3 {
+                font-family: $DisplayBold;
+                font-size: 30px;
+                color: $ColorCardsSlider;
+                padding-bottom: 1rem;
+                padding-top: 5rem;
+            }
+
+            h3::first-letter{
+                text-transform: uppercase;
+            }
+
+            img {
+                height: 350px;
+                width: 488px;
+                // Assombrir images
+                filter: brightness(0.5);
+            }
+
+            .info {
+                position: absolute;
+                top: 0;
+                width: 342px;
+                height: 100%;
+                padding: 1rem;
+                text-align: right;
+            }
+
+            p {
+                color: $ColorCardsSlider;
+                font-size: 20px;
+                font-family: $KarlaRegular;
+                padding-bottom: 3rem;
+            }
+            p::first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+//--------------- TRAILER -------------------//
+.trailer {
+    position: relative;
+    width: 100%;
+    height: 940px;
+    overflow: hidden;
+
+    .video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+    }
+}
+//--------------- TESTIMONIAL -------------------//
+.testimonial-clients {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    .container-full {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .container-item {
+        display: flex;
+        flex-direction: row;
+        gap: 15rem;
+    }
+
+    .title {
+        font-size: 30px;
+        font-family: $KarlaBold;
+        color: $primaryColor;
+        padding-bottom: 3rem;
+
+        h3::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    //---- ITEM 1
+    .item-one {
+        width: 485px;
+        height: 257px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        .user {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .notes {
+            display: flex;
+            
+            p{
+                padding-left: 1rem;
+            }
+        }
+
+        .container p:nth-child(1) {
+            color: $primaryColor;
+            font-size: 20px;
+            font-family: $KarlaBold;
+            padding-bottom: 0.5rem;
+        }
+
+        .description p {
+            color: $primaryColor;
+            font-family: $KarlaRegular;
+            font-size: 20px;
+            padding-top: 1rem;
+        }
+
+        .description p::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    //---- ITEM 2
+    .item-two {
+        width: 485px;
+        height: 257px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        .user {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .notes {
+            display: flex;
+            
+            p{
+                padding-left: 1rem;
+            }
+        }
+
+        .container p:nth-child(1) {
+            color: $primaryColor;
+            font-size: 20px;
+            font-family: $KarlaBold;
+            padding-bottom: 0.5rem;
+        }
+        .description p {
+            color: $primaryColor;
+            font-family: $KarlaRegular;
+            font-size: 20px;
+            padding-top: 1rem;
+        }
+        .description p::first-letter {
+            text-transform: uppercase;
+        }
+    }
+}
+//--------------- INFORMATION -------------------//
+//
+.information {
+    height: 660px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h4 {
+        font-size: 48px;
+        font-family: $DisplayBold;
+        color: $primaryColor;
+    }
+    h4::first-letter {
+        text-transform: uppercase;
+    }
+
+    .text-box {
+
+        p {
+            color: $primaryColor;
+            font-size: 20px;
+        }
+
+        p:nth-child(1) {
+            font-family: $KarlaBold;
+        }
+
+        p:nth-child(1)::first-letter {
+            text-transform: uppercase;
+        }
+        p:nth-child(2){
+            font-family: $KarlaRegular;
+        }
+
+        p:nth-child(3){
+            font-family: $KarlaRegular;
+        }
+    }
+
+    .accessibilite {
+        display: flex;
+        flex-direction: row;
+        gap: 15rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .column:first-child{
+            width: 485px;
+            height: 319px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column:last-child{
+            width: 485px;
+            height: 319px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .text-box:nth-child(3) {
+            padding-left: 2rem;
+        }
+
+        .text-box{
+            padding-left: 1rem;
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .contact {
+        
+        h4 {
+            color: $primaryColor;
+            font-size: 30px;
+            font-family: $DisplayBold;
+        }
+
+        p{
+            color: $ColorTxtContact;
+            font-family: $KarlaRegular;
+            font-size: 20px;
+        }
+
+        p::first-letter{
+            text-transform: uppercase;
+        }
+    }   
+}
+//-----------------------------------------------//
