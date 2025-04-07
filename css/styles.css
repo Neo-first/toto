@@ -269,6 +269,7 @@ header .contact-info .connexion a:nth-child(2) {
   }
 }
 .hero-banner {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   position: relative;
